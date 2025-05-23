@@ -53,7 +53,11 @@ DATABASE_URL = "YOUR_DATABASE_URL"
 
 engine = create_engine(DATABASE_URL)
 df.to_sql('orders', engine)
+
 ```
+**Username:** [root@mail.com](mailto:root@mail.com)
+**Password:** root123
+``
 
 ## Dashboard Bisnis
 
@@ -62,7 +66,8 @@ Dashboard ini bertujuan memberikan insight menyeluruh bagi tim HR mengenai fakto
 * Mengenali departemen atau posisi yang memiliki tingkat attrition tinggi
 * Menggali pengaruh faktor seperti lembur, kepuasan kerja, dan demografi terhadap attrition
 * Melakukan langkah-langkah strategis untuk meningkatkan retensi dan menekan biaya pergantian karyawan
-
+  
+![Contoh Dashboard](gambar/Business%20Dashboard%20Ersyafin.jpg)
 ## Kesimpulan
 
 - **Berapa besar tingkat attrition di perusahaan?**
@@ -88,9 +93,7 @@ Lembur berkontribusi signifikan terhadap keputusan karyawan untuk resign, kemung
 
 Dengan langkah-langkah ini, diharapkan tingkat attrition dapat ditekan, retensi karyawan meningkat, dan stabilitas operasional perusahaan menjadi lebih kuat.
 
----
 
-**Username:** [root@mail.com](mailto:root@mail.com)
-**Password:** root123
+
 
 
