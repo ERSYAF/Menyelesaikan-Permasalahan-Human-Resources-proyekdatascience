@@ -65,8 +65,8 @@ Dashboard ini bertujuan memberikan insight menyeluruh bagi tim HR mengenai fakto
 
 ## Kesimpulan
 
-**Berapa besar tingkat attrition di perusahaan?**
-Sekitar 17%, yang berarti sekitar satu dari enam karyawan meninggalkan perusahaan dalam periode tertentu, menunjukkan tantangan signifikan dalam mempertahankan tenaga kerja.
+- **Berapa besar tingkat attrition di perusahaan?**
+Tingkat attrition di perusahaan ini adalah sekitar 17%, berdasarkan data bahwa sekitar 1 dari 6 karyawan keluar. Angka ini diperoleh dari proporsi jumlah karyawan yang keluar dibanding total karyawan, dan didukung oleh distribusi pada grafik. Hal ini menunjukkan bahwa perusahaan menghadapi tantangan serius dalam mempertahankan karyawan.
 
 **Faktor apa saja yang berpengaruh?**
 
