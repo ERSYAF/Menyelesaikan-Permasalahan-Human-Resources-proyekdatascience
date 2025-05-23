@@ -71,19 +71,19 @@ Dashboard ini bertujuan memberikan insight menyeluruh bagi tim HR mengenai fakto
 
 ## Kesimpulan
 
-** 1. Berapa besar tingkat attrition di perusahaan?**
+ 1.  **Berapa besar tingkat attrition di perusahaan?**
 Tingkat attrition di perusahaan ini adalah sekitar 17%, berdasarkan data bahwa sekitar 1 dari 6 karyawan keluar. Angka ini diperoleh dari proporsi jumlah karyawan yang keluar dibanding total karyawan, dan didukung oleh distribusi pada grafik. Hal ini menunjukkan bahwa perusahaan menghadapi tantangan serius dalam mempertahankan karyawan.
 
 ![Distribusi attrition](gambar/attrition.png)
 
-** 2. Faktor apa saja yang berpengaruh?**
+ 2.  **Faktor apa saja yang berpengaruh?**
 
 * **Lembur:** Karyawan dengan jam lembur tinggi cenderung lebih sering keluar.
 * **Status Perkawinan:** Karyawan yang belum menikah (single) memiliki risiko attrition yang lebih tinggi, mungkin karena mobilitas dan keinginan mencari peluang baru.
 
 ![Distribusi attrition](gambar/faktor%20attrition.png)
 
-**3. Apakah ada variasi berdasarkan departemen atau posisi?**
+3.  **Apakah ada variasi berdasarkan departemen atau posisi?**
 Ya. Misalnya, posisi Sales Representative dan departemen Sales menunjukkan tingkat attrition yang lebih tinggi dibandingkan yang lain, kemungkinan disebabkan oleh tekanan kerja dan struktur insentif yang ada.
 dapat dilihat pada 
 * distribusi attrition vs departement
@@ -94,8 +94,10 @@ dapat dilihat pada
 
 ![Distribusi attrition vs jobrole](gambar/attrition%20vs%20jobrole.jpg)
 
-**Bagaimana pengaruh lembur terhadap keputusan keluar?**
+4. **Bagaimana pengaruh lembur terhadap keputusan keluar?**
 Lembur berkontribusi signifikan terhadap keputusan karyawan untuk resign, kemungkinan dikarenakan meningkatnya stres dan ketidakseimbangan antara pekerjaan dan kehidupan pribadi.
+
+![Distribusi attrition vs overtime](gambar/attrition%20vs%20overtimes.jpg)
 
 ## Rekomendasi Tindakan
 
