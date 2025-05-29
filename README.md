@@ -36,13 +36,13 @@ Proyek ini mencakup:
       ```
 ## Business Dashboard
 Hasil analisis data divisualisasikan dalam bentuk dashboard untuk membantu tim HR memantau dan memahami fenomena attrition karyawan. Elemen-elemen yang disertakan dalam dashboard meliputi:
-* **attrition rate** secara keseluruhan sebagai indikator tingkat turnover karyawan.
+* **Attrition Rate** secara keseluruhan sebagai indikator tingkat turnover karyawan.
 * **Jumlah total karyawan (Total Employee)** yang masih aktif dan yang sudah keluar, disajikan dalam grafik yang mudah dipahami.
 * **Faktor-faktor utama yang berkaitan dengan attrition**, antara lain:
-  * Karyawan yang melakukan **lembur (OverTime)** memiliki risiko keluar lebih tinggi.
-  * Karyawan dengan **status perkawinan single** menunjukkan kecenderungan keluar yang lebih besar.
-  * Posisi **Sales Representative** dan **Laboratory Technician** memiliki tingkat attrition yang relatif tinggi.
-  * Faktor **frekuensi perjalanan dinas (BusinessTravel)** juga berpengaruh terhadap attrition.
+  * Karyawan yang melakukan **lembur (OverTime)** memiliki risiko keluar lebih tinggi (Attrition by OverTime). 
+  * Karyawan dengan **status perkawinan single** menunjukkan kecenderungan keluar yang lebih besar (Attrition by MaritalStatus).
+  * Posisi **Sales Representative** dan **Laboratory Technician** memiliki tingkat attrition yang relatif tinggi (Attrition by JobRole).
+  * Faktor **frekuensi perjalanan dinas (BusinessTravel)** juga berpengaruh terhadap attrition (Attrition by JobRole).
 * **Faktor-faktor yang berperan dalam mengurangi attrition**, seperti:
   * Tingkat **Job Level** yang lebih tinggi terkait dengan tingkat retensi yang lebih baik.
   * Kepuasan lingkungan kerja (**Environment Satisfaction**) yang tinggi membantu menurunkan risiko keluar.
