@@ -58,12 +58,12 @@ Pemahaman terhadap pola ini sangat penting untuk membantu tim HR merancang strat
 ## Rekomendasi Action Items
 Berikut adalah beberapa rekomendasi tindakan yang dapat dilakukan perusahaan untuk mengurangi attrition rate:
 
-**Action Item 1:** Mengurangi lembur (OverTime), karena menjadi faktor paling kuat yang berkorelasi positif terhadap attrition. Perusahaan dapat mengatur ulang beban kerja, menambah tenaga kerja, atau memberikan kompensasi dan waktu istirahat yang seimbang untuk mengurangi tekanan kerja berlebih.
-**Action Item 2:** Meningkatkan keterlibatan dan retensi karyawan lajang (MaritalStatus\_Single) dengan menyediakan program engagement sosial, mentoring, dan komunitas internal yang membangun rasa memiliki terhadap perusahaan.
-**Action Item 3:** Melakukan pengawasan khusus pada posisi *Sales Representative* dan *Laboratory Technician*, karena kedua job role ini memiliki korelasi tinggi terhadap attrition. Bisa dilakukan dengan memberikan jalur karier yang lebih jelas, insentif khusus, atau pelatihan pengembangan diri.
-**Action Item 4:** Meningkatkan peluang promosi dan mobilitas karier, khususnya bagi karyawan dengan *YearsSinceLastPromotion* yang tinggi. Ini penting untuk menjaga motivasi dan mengurangi risiko kehilangan talenta.
-**Action Item 5:** Memberikan insentif seperti opsi saham (StockOptionLevel) sebagai bentuk apresiasi jangka panjang terhadap kontribusi karyawan, yang terbukti dapat menurunkan tingkat attrition secara signifikan.
-**Action Item 6:** Menjaga kepuasan terhadap lingkungan kerja (*EnvironmentSatisfaction*) melalui perbaikan fasilitas fisik, budaya kerja yang suportif, serta sistem umpan balik karyawan yang aktif dan responsif.
+1. **Action Item 1:** Mengurangi lembur (OverTime), karena menjadi faktor paling kuat yang berkorelasi positif terhadap attrition. Perusahaan dapat mengatur ulang beban kerja, menambah tenaga kerja, atau memberikan kompensasi dan waktu istirahat yang seimbang untuk mengurangi tekanan kerja berlebih.
+2. **Action Item 2:** Meningkatkan keterlibatan dan retensi karyawan lajang (MaritalStatus\_Single) dengan menyediakan program engagement sosial, mentoring, dan komunitas internal yang membangun rasa memiliki terhadap perusahaan.
+3. **Action Item 3:** Melakukan pengawasan khusus pada posisi *Sales Representative* dan *Laboratory Technician*, karena kedua job role ini memiliki korelasi tinggi terhadap attrition. Bisa dilakukan dengan memberikan jalur karier yang lebih jelas, insentif khusus, atau pelatihan pengembangan diri.
+4. **Action Item 4:** Meningkatkan peluang promosi dan mobilitas karier, khususnya bagi karyawan dengan *YearsSinceLastPromotion* yang tinggi. Ini penting untuk menjaga motivasi dan mengurangi risiko kehilangan talenta.
+5. **Action Item 5:** Memberikan insentif seperti opsi saham (StockOptionLevel) sebagai bentuk apresiasi jangka panjang terhadap kontribusi karyawan, yang terbukti dapat menurunkan tingkat attrition secara signifikan.
+6. **Action Item 6:** Menjaga kepuasan terhadap lingkungan kerja (*EnvironmentSatisfaction*) melalui perbaikan fasilitas fisik, budaya kerja yang suportif, serta sistem umpan balik karyawan yang aktif dan responsif.
 
 
 
