@@ -42,7 +42,6 @@ Hasil analisis data divisualisasikan dalam bentuk dashboard untuk membantu tim H
   * Karyawan yang melakukan **lembur (OverTime)** memiliki risiko keluar lebih tinggi (Attrition by OverTime). 
   * Karyawan dengan **status perkawinan single** menunjukkan kecenderungan keluar yang lebih besar (Attrition by MaritalStatus).
   * Posisi **Sales Representative** dan **Laboratory Technician** memiliki tingkat attrition yang relatif tinggi (Attrition by JobRole).
-  * Faktor **frekuensi perjalanan dinas (BusinessTravel)** juga berpengaruh terhadap attrition (Attrition by JobRole).
 * **Faktor-faktor yang berperan dalam mengurangi attrition**, seperti:
   * Tingkat **Job Level** yang lebih tinggi terkait dengan tingkat retensi yang lebih baik.
   * Kepuasan lingkungan kerja (**Environment Satisfaction**) yang tinggi membantu menurunkan risiko keluar.
