@@ -39,7 +39,8 @@ Hasil analisis data divisualisasikan dalam bentuk dashboard untuk membantu tim H
 * **Attrition Rate** secara keseluruhan sebagai indikator tingkat turnover karyawan.
 * **Jumlah total karyawan (Total Employee)** yang masih aktif dan yang sudah keluar, disajikan dalam grafik yang mudah dipahami.
 * **Faktor-faktor utama yang berkaitan dengan attrition**, antara lain:
-  * Karyawan yang melakukan **lembur (OverTime)** memiliki risiko keluar lebih tinggi (Attrition by OverTime). 
+  * Karyawan yang melakukan **lembur (OverTime)** memiliki risiko keluar lebih tinggi (Attrition by OverTime).
+  * karyawan laki-laki memiliki tingkat attrition yang lebih tinggi dibandingkan perempuan (Attrition by Gender). 
   * Karyawan dengan **status perkawinan single** menunjukkan kecenderungan keluar yang lebih besar (Attrition by MaritalStatus).
   * Posisi **Sales Representative** dan **Laboratory Technician** memiliki tingkat attrition yang relatif tinggi (Attrition by JobRole).
 * **Faktor-faktor yang berperan dalam mengurangi attrition**, seperti:
