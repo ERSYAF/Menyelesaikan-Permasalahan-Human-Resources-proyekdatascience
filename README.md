@@ -37,7 +37,7 @@ Proyek ini mencakup:
 ## Business Dashboard
 Hasil analisis data divisualisasikan dalam bentuk dashboard untuk membantu tim HR memantau dan memahami fenomena attrition karyawan. Elemen-elemen yang disertakan dalam dashboard meliputi:
 * **attrition rate** secara keseluruhan sebagai indikator tingkat turnover karyawan.
-* **Jumlah total karyawan** yang masih aktif dan yang sudah keluar, disajikan dalam grafik yang mudah dipahami.
+* **Jumlah total karyawan (Total Employee)** yang masih aktif dan yang sudah keluar, disajikan dalam grafik yang mudah dipahami.
 * **Faktor-faktor utama yang berkaitan dengan attrition**, antara lain:
   * Karyawan yang melakukan **lembur (OverTime)** memiliki risiko keluar lebih tinggi.
   * Karyawan dengan **status perkawinan single** menunjukkan kecenderungan keluar yang lebih besar.
