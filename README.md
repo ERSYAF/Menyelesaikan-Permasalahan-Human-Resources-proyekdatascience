@@ -1,8 +1,6 @@
 # Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Jaya Jaya Maju
----
-## Business Understanding
----
 
+## Business Understanding
 ### Latar Belakang Bisnis
 Jaya Jaya Maju adalah perusahaan multinasional yang berdiri sejak tahun 2000 dengan lebih dari 1000 karyawan yang tersebar di berbagai wilayah. Walaupun perusahaan ini sudah cukup besar dan mapan, mereka masih menghadapi masalah serius dalam pengelolaan sumber daya manusia. Salah satu isu utama adalah tingginya tingkat **attrition** atau perputaran karyawan yang mencapai lebih dari 10%. Hal ini menjadi indikator adanya kesulitan dalam mempertahankan karyawan, yang dapat berdampak negatif pada produktivitas, biaya rekrutmen, serta kelangsungan operasional perusahaan.
 
@@ -36,7 +34,6 @@ Proyek ini mencakup:
       username: root@mail.com
       password: root123
       ```
----
 ## Business Dashboard
 Hasil analisis data divisualisasikan dalam bentuk dashboard untuk membantu tim HR memantau dan memahami fenomena attrition karyawan. Elemen-elemen yang disertakan dalam dashboard meliputi:
 * **Rasio attrition** secara keseluruhan sebagai indikator tingkat turnover karyawan.
@@ -52,13 +49,11 @@ Hasil analisis data divisualisasikan dalam bentuk dashboard untuk membantu tim H
   * Level opsi saham (**Stock Option Level**) yang lebih tinggi juga berkontribusi pada karyawan yang bertahan.
     
 ![Dashboard](gambar/Business%20Dashboard%20Ersyafin.jpg)
----
 
 ## Conclusion
 Berdasarkan hasil analisis data dan visualisasi pada dashboard interaktif, dapat disimpulkan bahwa attrition karyawan di perusahaan dipengaruhi oleh berbagai faktor yang bersifat positif maupun negatif terhadap keputusan karyawan untuk keluar. Faktor seperti OverTime, status pernikahan Single, dan frekuensi perjalanan bisnis memiliki korelasi positif terhadap attrition, yang berarti kondisi tersebut berkontribusi pada peningkatan risiko karyawan keluar. Sebaliknya, faktor seperti JobLevel, StockOptionLevel, dan EnvironmentSatisfaction memiliki korelasi negatif, artinya faktor-faktor ini cenderung menahan karyawan untuk tetap tinggal.
 
 Pemahaman terhadap pola ini sangat penting untuk membantu tim HR merancang strategi retensi yang lebih tepat sasaran, sehingga dapat menurunkan tingkat turnover dan meningkatkan stabilitas organisasi.
----
 
 ## Rekomendasi Action Items
 Berikut adalah beberapa rekomendasi tindakan yang dapat dilakukan perusahaan untuk mengurangi attrition rate:
