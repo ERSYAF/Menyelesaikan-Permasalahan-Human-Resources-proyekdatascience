@@ -1,112 +1,75 @@
-# Proyek Akhir: Solusi untuk Tantangan Perusahaan Edutech
+# Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Jaya Jaya Maju
+---
+## Business Understanding
+---
 
-## Pemahaman Bisnis  
+### Latar Belakang Bisnis
 Jaya Jaya Maju adalah perusahaan multinasional yang berdiri sejak tahun 2000 dengan lebih dari 1000 karyawan yang tersebar di berbagai wilayah. Walaupun perusahaan ini sudah cukup besar dan mapan, mereka masih menghadapi masalah serius dalam pengelolaan sumber daya manusia. Salah satu isu utama adalah tingginya tingkat **attrition** atau perputaran karyawan yang mencapai lebih dari 10%. Hal ini menjadi indikator adanya kesulitan dalam mempertahankan karyawan, yang dapat berdampak negatif pada produktivitas, biaya rekrutmen, serta kelangsungan operasional perusahaan.
 
-## Permasalahan Utama  
-- Berapa besar tingkat attrition yang terjadi di perusahaan?  
-- Faktor apa saja yang mempengaruhi keputusan karyawan untuk keluar dari perusahaan?  
-- Apakah tingkat attrition berbeda di antara berbagai peran atau departemen?  
-- Bagaimana peran lembur (overtime) terhadap keputusan karyawan untuk mengundurkan diri?
+### Permasalahan Bisnis 
+Permasalahan bisnis utama yang akan diselesaikan dalam proyek ini adalah:
+* Mengidentifikasi faktor-faktor utama yang memengaruhi tingginya attrition rate di Jaya Jaya Maju.
 
-## Lingkup Proyek  
-- **Analisis Data:** Memanfaatkan data karyawan untuk mengidentifikasi faktor-faktor utama yang berkontribusi pada attrition.  
-- **Visualisasi dan Pelaporan:** Membuat dashboard interaktif bagi manajemen HR untuk memantau dan menganalisis faktor-faktor tersebut secara visual.  
-- **Rekomendasi dan Tindakan:** Memberikan usulan solusi berdasarkan hasil analisis untuk menurunkan tingkat attrition dan meningkatkan kepuasan karyawan.
+### Cakupan Proyek
+Proyek ini mencakup:
+* Melakukan analisis data untuk memahami pola dan tren yang berkaitan dengan attrition.
+* Membangun model machine learning untuk menentukan fitur-fitur penting yang dapat membantu mencegah attrition karyawan.
 
-## Persiapan dan Setup
-
-### Dataset  
-Data yang digunakan berasal dari perusahaan Jaya Jaya Maju.
-
-### Membuat Environment Conda  
-```bash
-conda create --name proyek-hr python=3.9.15
-````
-
-### Instalasi Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Menyiapkan Metabase
-
-```bash
-docker pull metabase/metabase:v0.46.4
-docker run -p 3000:3000 --name metabase metabase/metabase
-```
-
-Akses Metabase di [http://localhost:3000/setup](http://localhost:3000/setup) untuk konfigurasi awal.
-
-### Menyiapkan Database Supabase
-
-* Daftar dan login di [https://supabase.com/dashboard/sign-in](https://supabase.com/dashboard/sign-in)
-* Buat project baru
-* Salin URI database dari pengaturan project
-* Upload dataset menggunakan SQLAlchemy:
-
-```python
-from sqlalchemy import create_engine
-
-DATABASE_URL = "YOUR_DATABASE_URL"
-
-engine = create_engine(DATABASE_URL)
-df.to_sql('orders', engine)
-
-```
-**Username:** [root@mail.com](mailto:root@mail.com)
-**Password:** root123
-``
-
-## Dashboard Bisnis
-
-Dashboard ini bertujuan memberikan insight menyeluruh bagi tim HR mengenai faktor-faktor yang mempengaruhi karyawan dalam mengambil keputusan keluar dari perusahaan. Dengan menggunakan dashboard ini, tim HR dapat:
-
-* Mengenali departemen atau posisi yang memiliki tingkat attrition tinggi
-* Menggali pengaruh faktor seperti lembur, kepuasan kerja, dan demografi terhadap attrition
-* Melakukan langkah-langkah strategis untuk meningkatkan retensi dan menekan biaya pergantian karyawan
-  
+### Persiapan dan Setup
+- **Sumber Data**: Data karyawan diperoleh dari [repositori GitHub Dicoding](https://github.com/dicodingacademy/dicoding_dataset/tree/main/employee).  Dataset ini adalah Dataset Karyawan Jaya Jaya Maju sesuai dengan instruksi dari submission proyek ini.
+- **Setup Environment**:  
+   1. **Menjalankan `notebook.ipynb`**
+   - Pastikan dependensi, packages, library yang dibutuhkan sudah tersedia (lihat file `requirements.txt` untuk melihat dependensi yang dibutuhkan).
+   - Jalankan seluruh isi file `notebook.ipynb` menggunakan Google Colab/Jupyter Notebook untuk melihat hasil analisis data, temuan, dan insight yang diperoleh.
+   2. **Menjalankan Dashboard**:
+   Untuk melihat isi dashboard secara langsung, dapat menggunakan **metabase** dengan bantuan Docker (pastikan Docker sudah terinstall).
+   - Jalankan perintah berikut:
+      ```
+      docker pull metabase/metabase:v0.46.4
+      ```
+   - Jalankan container Metabase menggunakan perintah:
+      ```
+      docker run -p 3000:3000 --name metabase metabase/metabase
+      ```
+   - Login ke Metabase menggunakan username dan password berikut:
+      ```
+      username: root@mail.com
+      password: root123
+      ```
+---
+## Business Dashboard
+Hasil analisis data divisualisasikan dalam bentuk dashboard untuk membantu tim HR memantau dan memahami fenomena attrition karyawan. Elemen-elemen yang disertakan dalam dashboard meliputi:
+* **Rasio attrition** secara keseluruhan sebagai indikator tingkat turnover karyawan.
+* **Jumlah total karyawan** yang masih aktif dan yang sudah keluar, disajikan dalam grafik yang mudah dipahami.
+* **Faktor-faktor utama yang berkaitan dengan attrition**, antara lain:
+  * Karyawan yang melakukan **lembur (OverTime)** memiliki risiko keluar lebih tinggi.
+  * Karyawan dengan **status perkawinan single** menunjukkan kecenderungan keluar yang lebih besar.
+  * Posisi **Sales Representative** dan **Laboratory Technician** memiliki tingkat attrition yang relatif tinggi.
+  * Faktor **frekuensi perjalanan dinas (BusinessTravel)** juga berpengaruh terhadap attrition.
+* **Faktor-faktor yang berperan dalam mengurangi attrition**, seperti:
+  * Tingkat **Job Level** yang lebih tinggi terkait dengan tingkat retensi yang lebih baik.
+  * Kepuasan lingkungan kerja (**Environment Satisfaction**) yang tinggi membantu menurunkan risiko keluar.
+  * Level opsi saham (**Stock Option Level**) yang lebih tinggi juga berkontribusi pada karyawan yang bertahan.
+    
 ![Dashboard](gambar/Business%20Dashboard%20Ersyafin.jpg)
+---
 
-## Kesimpulan
+## Conclusion
+Berdasarkan hasil analisis data dan visualisasi pada dashboard interaktif, dapat disimpulkan bahwa attrition karyawan di perusahaan dipengaruhi oleh berbagai faktor yang bersifat positif maupun negatif terhadap keputusan karyawan untuk keluar. Faktor seperti OverTime, status pernikahan Single, dan frekuensi perjalanan bisnis memiliki korelasi positif terhadap attrition, yang berarti kondisi tersebut berkontribusi pada peningkatan risiko karyawan keluar. Sebaliknya, faktor seperti JobLevel, StockOptionLevel, dan EnvironmentSatisfaction memiliki korelasi negatif, artinya faktor-faktor ini cenderung menahan karyawan untuk tetap tinggal.
 
- 1.  **Berapa besar tingkat attrition di perusahaan?**
-Tingkat attrition di perusahaan ini adalah sekitar 17%, berdasarkan data bahwa sekitar 1 dari 6 karyawan keluar. Angka ini diperoleh dari proporsi jumlah karyawan yang keluar dibanding total karyawan, dan didukung oleh distribusi pada grafik. Hal ini menunjukkan bahwa perusahaan menghadapi tantangan serius dalam mempertahankan karyawan.
+Pemahaman terhadap pola ini sangat penting untuk membantu tim HR merancang strategi retensi yang lebih tepat sasaran, sehingga dapat menurunkan tingkat turnover dan meningkatkan stabilitas organisasi.
+---
 
-![Distribusi attrition](gambar/attrition.png)
+## Rekomendasi Action Items
+Berikut adalah beberapa rekomendasi tindakan yang dapat dilakukan perusahaan untuk mengurangi attrition rate:
 
- 2.  **Faktor apa saja yang berpengaruh?**
+**Action Item 1:** Mengurangi lembur (OverTime), karena menjadi faktor paling kuat yang berkorelasi positif terhadap attrition. Perusahaan dapat mengatur ulang beban kerja, menambah tenaga kerja, atau memberikan kompensasi dan waktu istirahat yang seimbang untuk mengurangi tekanan kerja berlebih.
+**Action Item 2:** Meningkatkan keterlibatan dan retensi karyawan lajang (MaritalStatus\_Single) dengan menyediakan program engagement sosial, mentoring, dan komunitas internal yang membangun rasa memiliki terhadap perusahaan.
+**Action Item 3:** Melakukan pengawasan khusus pada posisi *Sales Representative* dan *Laboratory Technician*, karena kedua job role ini memiliki korelasi tinggi terhadap attrition. Bisa dilakukan dengan memberikan jalur karier yang lebih jelas, insentif khusus, atau pelatihan pengembangan diri.
+**Action Item 4:** Meningkatkan peluang promosi dan mobilitas karier, khususnya bagi karyawan dengan *YearsSinceLastPromotion* yang tinggi. Ini penting untuk menjaga motivasi dan mengurangi risiko kehilangan talenta.
+**Action Item 5:** Memberikan insentif seperti opsi saham (StockOptionLevel) sebagai bentuk apresiasi jangka panjang terhadap kontribusi karyawan, yang terbukti dapat menurunkan tingkat attrition secara signifikan.
+**Action Item 6:** Menjaga kepuasan terhadap lingkungan kerja (*EnvironmentSatisfaction*) melalui perbaikan fasilitas fisik, budaya kerja yang suportif, serta sistem umpan balik karyawan yang aktif dan responsif.
 
-* **Lembur:** Karyawan dengan jam lembur tinggi cenderung lebih sering keluar.
-* **Status Perkawinan:** Karyawan yang belum menikah (single) memiliki risiko attrition yang lebih tinggi, mungkin karena mobilitas dan keinginan mencari peluang baru.
-
-![Distribusi attrition](gambar/faktor%20attrition.png)
-
-3.  **Apakah ada variasi berdasarkan departemen atau posisi?**
-Ya. Misalnya, posisi Sales Representative dan departemen Sales menunjukkan tingkat attrition yang lebih tinggi dibandingkan yang lain, kemungkinan disebabkan oleh tekanan kerja dan struktur insentif yang ada.
-dapat dilihat pada 
-* distribusi attrition vs departement
-* 
-![Distribusi attrition vs departement](gambar/attrition%20vs%20department.jpg)
-
-* distribusi attrition vs jobrole
-
-![Distribusi attrition vs jobrole](gambar/attrition%20vs%20jobrole.jpg)
-
-4. **Bagaimana pengaruh lembur terhadap keputusan keluar?**
-Lembur berkontribusi signifikan terhadap keputusan karyawan untuk resign, kemungkinan dikarenakan meningkatnya stres dan ketidakseimbangan antara pekerjaan dan kehidupan pribadi.
-
-![Distribusi attrition vs overtime](gambar/attrition%20vs%20overtimes.jpg)
-
-## Rekomendasi Tindakan
-
-* **Kelola dan kurangi jam lembur:** Evaluasi beban kerja untuk menghindari lembur berlebihan yang dapat merusak keseimbangan hidup dan kerja.
-* **Tingkatkan kepuasan dan suasana kerja:** Terapkan program yang mendukung kenyamanan dan keterlibatan karyawan.
-* **Fokus retensi di departemen kritis:** Berikan perhatian khusus dan insentif di area dengan attrition tinggi, seperti departemen Sales.
-* **Pantau secara berkelanjutan:** Gunakan dashboard untuk mengawasi faktor risiko dan lakukan penyesuaian cepat jika diperlukan.
-
-Dengan langkah-langkah ini, diharapkan tingkat attrition dapat ditekan, retensi karyawan meningkat, dan stabilitas operasional perusahaan menjadi lebih kuat.
 
 
 
