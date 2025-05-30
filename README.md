@@ -48,7 +48,7 @@ Hasil analisis data divisualisasikan dalam bentuk dashboard untuk membantu tim H
   * Kepuasan lingkungan kerja (**Environment Satisfaction**) yang tinggi membantu menurunkan risiko keluar (Attrition by EnvironmentSatisfaction).
   * Level opsi saham (**Stock Option Level**) yang lebih tinggi juga berkontribusi pada karyawan yang bertahan (Attrition dan Stock Option Level).
     
-![Dashboard](gambar/Business%20Dashboard%20Ersyafin.jpg)
+![Dashboard](gambar/Dashboard%20Jaya%20Jaya%20Maju%20(Ersyafin).jpg)
 
 ## Conclusion
 Berdasarkan hasil analisis data dan visualisasi pada dashboard interaktif, dapat disimpulkan bahwa attrition karyawan di perusahaan dipengaruhi oleh berbagai faktor yang bersifat positif maupun negatif terhadap keputusan karyawan untuk keluar. Faktor seperti OverTime, status pernikahan Single, dan frekuensi perjalanan bisnis memiliki korelasi positif terhadap attrition, yang berarti kondisi tersebut berkontribusi pada peningkatan risiko karyawan keluar. Sebaliknya, faktor seperti JobLevel, StockOptionLevel, dan EnvironmentSatisfaction memiliki korelasi negatif, artinya faktor-faktor ini cenderung menahan karyawan untuk tetap tinggal.
