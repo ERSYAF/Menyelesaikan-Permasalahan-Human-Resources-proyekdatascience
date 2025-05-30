@@ -44,9 +44,9 @@ Hasil analisis data divisualisasikan dalam bentuk dashboard untuk membantu tim H
   * Karyawan dengan **status perkawinan single** menunjukkan kecenderungan keluar yang lebih besar (Attrition by MaritalStatus).
   * Posisi **Sales Representative** dan **Laboratory Technician** memiliki tingkat attrition yang relatif tinggi (Attrition by JobRole).
 * **Faktor-faktor yang berperan dalam mengurangi attrition**, seperti:
-  * Tingkat **Job Level** yang lebih tinggi terkait dengan tingkat retensi yang lebih baik.
-  * Kepuasan lingkungan kerja (**Environment Satisfaction**) yang tinggi membantu menurunkan risiko keluar.
-  * Level opsi saham (**Stock Option Level**) yang lebih tinggi juga berkontribusi pada karyawan yang bertahan.
+  * Tingkat **Job Level** yang lebih tinggi terkait dengan tingkat retensi yang lebih baik (Attrition by JobLevel).
+  * Kepuasan lingkungan kerja (**Environment Satisfaction**) yang tinggi membantu menurunkan risiko keluar (Attrition by EnvironmentSatisfaction).
+  * Level opsi saham (**Stock Option Level**) yang lebih tinggi juga berkontribusi pada karyawan yang bertahan (Attrition dan Stock Option Level).
     
 ![Dashboard](gambar/Business%20Dashboard%20Ersyafin.jpg)
 
